@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles.css">
+  <title>People List</title>
+</head>
+<body>
+  <h1>People List</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+        <th>Mobile</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% people.forEach(person => { %>
+        <tr>
+          <td><%= person.name %></td>
+          <td><%= person.age %></td>
+          <td><%= person.gender === 'M' ? 'Male' : 'Female' %></td>
+          <td><%= person.mobile %></td>
+          <td>
+            <a href="/person/edit/<%= person._id %>"><button class="edit">Edit</button></a>
+            <a href="/person/delete/<%= person._id %>"><button class="delete">Delete</button></a>
+          </td>
+        </tr>
+      <% }); %>
+    </tbody>
+  </table>
+  <div style="text-align: center;">
+    <a href="/person/new"><button>Add New Person</button></a>
+  </div>
+</body>
+</html>
