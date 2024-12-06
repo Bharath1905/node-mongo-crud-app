@@ -1,2 +1,3 @@
-# node-mongo-crud-app
-A simple RESTful web service using Node.js, Express, and MongoDB for managing people records. Features include Create, Read, Update, and Delete (CRUD) operations with EJS templates for server-side rendering.
+# Node.js and MongoDB RESTful Web Service
+This is a RESTful web service built using Node.js, Express, and MongoDB. It allows users to perform basic CRUD (Create, Read, Update, Delete) operations on a collection of people. The project demonstrates the use of server-side rendering with EJS templates and basic CSS styling for a better user interface.
+#Features
